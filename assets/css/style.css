@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+
+  *::-webkit-scrollbar {
+    @apply bg-black w-0;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-black;
+  }
+}
+@layer components {
+  .btn-book {
+    @apply text-blue bg-yellow rounded-md py-10 px-25 font-600 font-Prompt hidden xl:block;
+  }
+  .h1 {
+    @apply text-64 xl:text-110 font-FjallaOne text-white drop-shadow-md;
+  }
+  .h2 {
+    @apply text-32 xl:text-48 font-FjallaOne text-white uppercase;
+  }
+}
+@layer utilities {
+  .announcement {
+    @apply h-69 bg-blue flex justify-center items-center xl:text-32 text-yellow uppercase font-BowlbyOne;
+  }
+  .big-header {
+    @apply bg-[url('../image/Header.png')] h-auto xl:h-800 bg-black;
+  }
+  .big-header .header-top {
+    @apply h-120 flex items-center justify-around xl:justify-evenly;
+  }
+  .big-header .header-top .navebar {
+    @apply h-full w-7/12 text-white hidden xl:block;
+  }
+  .big-header .header-top .navebar ul {
+    @apply h-full w-full flex justify-center items-center gap-28 uppercase font-Prompt font-600;
+  }
+  .big-header .header-bottom {
+    @apply container m-auto flex flex-wrap justify-center xl:justify-between items-center mt-30;
+  }
+
+  .compny-contact {
+    @apply text-20 font-Prompt text-blue font-600 h-[260px] flex items-center;
+  }
+  .compny-contact .swiper-slide {
+    @apply flex flex-col items-center;
+  }
+
+  .populer-excursions {
+    @apply h-997 bg-blue flex items-center;
+  }
+}
