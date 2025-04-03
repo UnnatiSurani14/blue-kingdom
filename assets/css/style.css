@@ -21,13 +21,40 @@
 }
 @layer components {
   .btn-book {
-    @apply text-blue bg-yellow rounded-md py-10 px-25 font-600 font-Prompt hidden xl:block;
+    @apply text-blue bg-yellow rounded-md py-10 375:px-1 px-25 font-600 font-Prompt uppercase;
+  }
+  .btn-more {
+    @apply text-lightBlue border-2 border-lightBlue rounded-md py-10 375:px-1 px-25 font-600 font-Prompt uppercase;
+  }
+  .map-btn {
+    @apply text-white bg-blue rounded-md font-Prompt px-10 py-10 uppercase flex justify-center gap-10;
   }
   .h1 {
     @apply text-64 xl:text-110 font-FjallaOne text-white drop-shadow-md;
   }
-  .h2 {
-    @apply text-32 xl:text-48 font-FjallaOne text-white uppercase;
+  .title {
+    @apply text-32 xl:text-48 font-FjallaOne text-blue xl:text-white uppercase text-center;
+  }
+  .title-blue {
+    @apply text-blue xl:text-left;
+  }
+  .title-blue-card {
+    @apply text-blue font-Prompt font-600 text-center text-20 uppercase;
+  }
+  .title-map {
+    @apply text-blue text-48 xl:text-64 text-center drop-shadow-xl font-FjallaOne uppercase;
+  }
+  .title-adventure {
+    @apply text-white text-48 xl:text-64 text-center drop-shadow-xl font-FjallaOne uppercase;
+  }
+  .title-footer {
+    @apply text-white text-20 font-Prompt font-600 uppercase;
+  }
+  .sub-title {
+    @apply text-24 text-white font-Prompt;
+  }
+  .content {
+    @apply text-16 font-Prompt text-black;
   }
 }
 @layer utilities {
@@ -35,7 +62,7 @@
     @apply h-69 bg-blue flex justify-center items-center xl:text-32 text-yellow uppercase font-BowlbyOne;
   }
   .big-header {
-    @apply bg-[url('../image/Header.png')] h-auto xl:h-800 bg-black;
+    @apply bg-[url('../assets/image/Header.png')] bg-no-repeat bg-cover bg-bottom h-auto xl:h-800;
   }
   .big-header .header-top {
     @apply h-120 flex items-center justify-around xl:justify-evenly;
@@ -46,10 +73,14 @@
   .big-header .header-top .navebar ul {
     @apply h-full w-full flex justify-center items-center gap-28 uppercase font-Prompt font-600;
   }
+  .big-header .header-top .header-book-btn {
+    @apply hidden xl:block;
+  }
   .big-header .header-bottom {
     @apply container m-auto flex flex-wrap justify-center xl:justify-between items-center mt-30;
   }
 
+  /* compny-contact */
   .compny-contact {
     @apply text-20 font-Prompt text-blue font-600 h-[260px] flex items-center;
   }
@@ -57,7 +88,69 @@
     @apply flex flex-col items-center;
   }
 
+  /* populer-excursions */
   .populer-excursions {
-    @apply h-997 bg-blue flex items-center;
+    @apply h-600 1366:h-800 xl:h-997 bg-crem xl:bg-blue relative border-transparent;
+  }
+  .populer-excursions-swiper .swiper-slide {
+    @apply bg-white w-335 rounded-lg overflow-hidden relative shadow-xl;
+  }
+  .populer-excursions-swiper .banner {
+    @apply absolute top-0 right-0 text-14 text-white font-Prompt font-700 bg-lightBlue p-10 rounded-bl-lg;
+  }
+  .populer-excursions-swiper .swiper-slide .swiper-slide-content {
+    @apply p-10 xl:p-20;
+  }
+  .populer-excursions-swiper ul li {
+    @apply text-16 font-Prompt text-black flex gap-8 mt-3;
+  }
+  .populer-excursions .swiper-pagination-bullet {
+    @apply w-[55px] h-[14px] border border-lightBlue rounded-sm;
+  }
+
+  /* our-boats */
+  .our-boats {
+    @apply h-auto xl:h-550 flex flex-wrap justify-evenly items-center text-center xl:text-left  p-10;
+  }
+  .our-boats .boat-contant {
+    @apply w-662 order-2 xl:order-1 py-50;
+  }
+  .boat-img {
+    @apply rounded-sm overflow-hidden order-1 xl:order-2;
+  }
+
+  /* map */
+  .map {
+    @apply container m-auto h-auto xl:h-530 bg-[url('../assets/image/map.png')] bg-no-repeat bg-center bg-cover p-30 flex flex-wrap justify-center xl:justify-between;
+  }
+  .map .map-contain {
+    @apply bg-blue text-center text-white h-auto xl:h-full w-full lg:w-[340px] order-2 xl:order-1 my-20 xl:my-auto;
+  }
+  .map-title {
+    @apply w-800 h-full sm:p-20 xl:p-32 order-1 xl:order-2;
+  }
+
+  /* find-gram */
+  .find-gram .btn {
+    @apply h-[46px] w-[148px] bg-blue text-white text-center text-16 font-Prompt rounded-md;
+  }
+
+  /* adventure-awaits */
+  .adventure-awaits {
+    @apply h-80 bg-[url('../assets/image/Adventure.png')] bg-no-repeat bg-cover flex flex-col items-center justify-center;
+  }
+
+  /* footer */
+  .footer {
+    @apply bg-blue text-white p-30;
+  }
+  .footer .footer-menu {
+    @apply border p-5;
+  }
+  .footer .footer-dropdown ul li {
+    @apply text-16 font-Prompt mt-12;
+  }
+  .footer input {
+    @apply h-[42px] w-[300px] rounded-md my-2;
   }
 }
