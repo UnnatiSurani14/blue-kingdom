@@ -32,7 +32,7 @@ const compnyContact = new Swiper(".compny-contact-swiper", {
 const populerExcursions = new Swiper(".populer-excursions-swiper", {
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 40,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: false,

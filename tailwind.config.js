@@ -53,6 +53,7 @@ module.exports = {
         70: "70px",
         90: "90px",
         120: "120px",
+        150:"150px",
       },
       margin: {
         10: "10px",
