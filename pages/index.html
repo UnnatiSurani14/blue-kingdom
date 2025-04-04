@@ -78,7 +78,7 @@
     <div class="swiper compny-contact-swiper container">
       <div class="swiper-wrapper flex items-center">
         <div class="swiper-slide">
-          <a href="" aria-label="Advisor">
+          <a href="" aria-label="Advisor" class="swiper-slider-items">
           <img src="../assets/image/tripadvisor.png" alt="tripadvisor" class="mb-10" />
           <p>111 REVIEWS</p>
           <div class="flex items-center gap-10">
@@ -94,7 +94,7 @@
         </a>
         </div>
         <div class="swiper-slide">
-          <a href="" aria-label="Advisor">
+          <a href="" aria-label="Advisor" class="swiper-slider-items">
           <img src="../assets/image/facebook.png" alt="facebook" class="mb-10" />
           <p>18 REVIEWS</p>
           <div class="flex items-center gap-10">
@@ -110,12 +110,12 @@
         </a>
         </div>
         <div class="swiper-slide">
-          <a href="" aria-label="Advisor">
+          <a href="" aria-label="Advisor" class="swiper-slider-items">
           <img src="../assets/image/card.png" alt="card" />
         </a>
         </div>
         <div class="swiper-slide">
-          <a href="" aria-label="Advisor">
+          <a href="" aria-label="Advisor" class="swiper-slider-items">
           <img src="../assets/image/google.png" alt="google" class="mb-10" />
           <p>224 REVIEWS</p>
           <div class="flex items-center gap-10">
@@ -131,7 +131,7 @@
         </a>
         </div>
         <div class="swiper-slide">
-          <a href="" aria-label="Advisor">
+          <a href="" aria-label="Advisor" class="swiper-slider-items">
           <img src="../assets/image/yelp.png" alt="yelp" class="mb-10" />
           <p>13 REVIEWS</p>
           <div class="flex items-center gap-10">
@@ -356,6 +356,93 @@
       <div class="title title-blue ">
         <p>customer review</p>
       </div>
+      
+      <div class="all-review">
+        <div class="tab-slid ">
+          <div class="tan-slid-item">
+              <button class="tab-button" data-tab="tab1">
+                <div class="content"><p>AllReviews</p></div>
+                <span class="text-blue font-700">50</span>
+              </button>
+              <button class="tab-button" data-tab="tab2">
+                <img src="../assets/image/bi_google.png" alt="google">
+                <div class="content"><p>Google </p></div>
+                <span class="text-blue font-700">5.0</span>
+              </button>
+              <button class="tab-button" data-tab="tab3">
+                <img src="../assets/image/Group.png" alt="tripadvisor">
+                <div class="content"><p>Tripadvisor</p></div>
+                <span class="text-blue font-700">5.0</span>
+              </button>
+          </div>
+          <div class="tab-content " id="tab1">
+            <div class="md:flex justify-between items-center">
+            <div>
+            <div class="tab-title">
+              <h4>Overall Rating</h4>
+            </div>
+            <div class="flex items-center gap-10">
+              <h4 class="tab-title">5.0</h4>
+              <ul>
+                <li><img src="../assets/image/star icon.png" alt="star"></li>
+                <li><img src="../assets/image/star icon.png" alt="star"></li>
+                <li><img src="../assets/image/star icon.png" alt="star"></li>
+                <li><img src="../assets/image/star icon.png" alt="star"></li>
+                <li><img src="../assets/image/star icon.png" alt="star"></li>
+              </ul>
+              <span class="text-black text-12 font-Prompt">(308)</span>
+            </div>
+          </div>
+          <div class="my-3"><a href="" class="btn-book">writea review</a></div>
+        </div>
+          </div>
+          <div class="tab-content hidden" id="tab2">
+            <div class="md:flex justify-between items-center">
+            <div>
+              <div class="tab-title flex">
+                <img src="../assets/image/google.png" alt="google">
+                <h4>Reviews</h4>
+              </div>
+              <div class="flex items-center gap-10">
+                <h4 class="tab-title">4.6</h4>
+                <ul>
+                  <li><img src="../assets/image/star icon.png" alt="star"></li>
+                  <li><img src="../assets/image/star icon.png" alt="star"></li>
+                  <li><img src="../assets/image/star icon.png" alt="star"></li>
+                  <li><img src="../assets/image/star icon.png" alt="star"></li>
+                  <li><img src="../assets/image/star icon.png" alt="star"></li>
+                </ul>
+                <span class="text-black text-12 font-Prompt">(66)</span>
+              </div>
+            </div>
+            <div class="my-3"><a href="" class="btn-book">review as on google</a></div>
+          </div>
+            </div>
+            <div class="tab-content hidden" id="tab3">
+              <div class="md:flex justify-between items-center">
+              <div>
+                <div class="tab-title">
+                  <img src="../assets/image/tripadvisor.png" alt="tripadvisor">
+                  <h4>Reviews</h4>
+                </div>
+                <div class="flex items-center gap-10">
+                  <h4 class="tab-title">5.0</h4>
+                  <ul>
+                    <li><img src="../assets/image/star icon.png" alt="star"></li>
+                    <li><img src="../assets/image/star icon.png" alt="star"></li>
+                    <li><img src="../assets/image/star icon.png" alt="star"></li>
+                    <li><img src="../assets/image/star icon.png" alt="star"></li>
+                    <li><img src="../assets/image/star icon.png" alt="star"></li>
+                  </ul>
+                  <span class="text-black text-12 font-Prompt">(20)</span>
+                </div>
+              </div>
+              <div class="my-3"><a href="" class="btn-book">review as on tripadvisor</a></div>
+            </div>
+          </div>
+          </div>
+      </div>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-20">
         <div class="reviews">
           <div class="review-date"><span>January 1</span></div>
@@ -534,10 +621,10 @@
       <button type="button" class="btn">follow us</button>
     </div>
     <div class="grid grid-cols-2 xl:grid-cols-4 gap-2 p-20 md:ps-70">
-      <img src="../assets/image/find1.png" alt="image" width="363" height="363" />
-      <img src="../assets/image/find2.png" alt="image" width="363" height="363" />
-      <img src="../assets/image/find3.png" alt="image" width="363" height="363" />
-      <img src="../assets/image/find4.png" alt="image" width="363" height="363" />
+      <img src="../assets/image/find1.png" alt="image" width="363" height="363" class="gram-img"/>
+      <img src="../assets/image/find2.png" alt="image" width="363" height="363" class="gram-img"/>
+      <img src="../assets/image/find3.png" alt="image" width="363" height="363" class="gram-img"/>
+      <img src="../assets/image/find4.png" alt="image" width="363" height="363" class="gram-img"/>
     </div>
   </section>
   <!-- find gram end -->
