@@ -1531,9 +1531,6 @@ video {
   width: 100%;
   border-radius: 0.5rem;
   padding: 1rem;
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .tab-slid .tan-slid-item {
@@ -1542,9 +1539,12 @@ video {
   gap: 28px;
   overflow: auto;
   border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(20 44 88 / var(--tw-border-opacity, 1));
 }
 
 .tab-slid .tab-button {
+  margin-inline-start: 1.25rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;

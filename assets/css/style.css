@@ -142,13 +142,13 @@
     @apply h-auto xl:h-195 container my-20 bg-crem;
   }
   .tab-slid{
-    @apply w-full h-full p-4 shadow-lg rounded-lg ;
+    @apply w-full h-full p-4 rounded-lg ;
   }
   .tab-slid .tan-slid-item{
-    @apply w-full border-b flex gap-28 overflow-auto;
+    @apply w-full border-b border-blue flex gap-28 overflow-auto;
   }
   .tab-slid .tab-button{
-    @apply px-4 py-2 flex items-center gap-2 focus:outline-none;
+    @apply px-4 py-2 flex items-center gap-2 focus:outline-none ms-5;
   }
   .tab-slid .tab-content{
     @apply p-4 w-full my-10;
