@@ -21,22 +21,25 @@
 }
 @layer components {
   .btn-book {
-    @apply text-blue bg-yellow rounded-md py-10 375:px-1 px-25 font-600 font-Prompt uppercase;
+    @apply text-blue bg-yellow rounded-md py-10 375:px-4 px-25 font-600 font-Prompt uppercase hover:bg-lightYellow hover:shadow-sm hover:shadow-white;
   }
   .btn-more {
-    @apply text-lightBlue border-2 border-lightBlue rounded-md py-10 375:px-1 px-25 font-600 font-Prompt uppercase;
+    @apply text-lightBlue border-2 border-lightBlue rounded-md py-10 375:px-1 1450:px-3 px-25 font-600 font-Prompt uppercase;
   }
   .map-btn {
     @apply text-white bg-blue rounded-md font-Prompt px-10 py-10 uppercase flex justify-center gap-10;
   }
+  .header-title{
+    @apply font-FjallaOne text-white
+  }
   .h1 {
-    @apply text-64 xl:text-110 font-FjallaOne text-white drop-shadow-md;
+    @apply text-64 xl:text-110 drop-shadow-md;
   }
   .title {
     @apply text-32 xl:text-48 font-FjallaOne text-blue xl:text-white uppercase text-center;
   }
   .title-blue {
-    @apply text-blue xl:text-left;
+    @apply text-blue ;
   }
   .title-blue-card {
     @apply text-blue font-Prompt font-600 text-center text-20 uppercase;
@@ -48,7 +51,7 @@
     @apply text-white text-48 xl:text-64 text-center drop-shadow-xl font-FjallaOne uppercase;
   }
   .title-footer {
-    @apply text-white text-20 font-Prompt font-600 uppercase;
+    @apply text-white text-20 font-Prompt font-600 uppercase mb-2;
   }
   .sub-title {
     @apply text-24 text-white font-Prompt;
@@ -61,17 +64,25 @@
   .announcement {
     @apply h-69 bg-blue flex justify-center items-center xl:text-32 text-yellow uppercase font-BowlbyOne;
   }
+
+  /* header */
   .big-header {
-    @apply bg-[url('../assets/image/Header.png')] bg-no-repeat bg-cover bg-bottom h-auto xl:h-800;
+    @apply  bg-[url('../assets/image/Header.png')] bg-no-repeat bg-cover bg-bottom h-auto xl:h-800 ;
   }
   .big-header .header-top {
-    @apply h-120 flex items-center justify-around xl:justify-evenly;
+    @apply h-full xl:h-120 flex flex-wrap items-center justify-around xl:justify-evenly p-2;
   }
-  .big-header .header-top .navebar {
-    @apply h-full w-7/12 text-white hidden xl:block;
+  .big-header .header-top .navbar {
+    @apply h-full w-full xl:w-7/12 text-white order-3 xl:order-2 hidden xl:block mt-4;
   }
-  .big-header .header-top .navebar ul {
-    @apply h-full w-full flex justify-center items-center gap-28 uppercase font-Prompt font-600;
+  .big-header .header-top .navbar ul {
+    @apply h-full w-full xl:flex justify-center items-center gap-28 uppercase font-Prompt font-600 text-center ;
+  }
+  .big-header .header-top .navbar ul li{
+    @apply my-4 xl:mt-0
+  }
+  .big-header .header-top .navbar ul li a{
+    @apply hover:text-yellow
   }
   .big-header .header-top .header-book-btn {
     @apply hidden xl:block;
@@ -87,8 +98,12 @@
   .compny-contact .swiper-slide {
     @apply flex flex-col items-center;
   }
+  .compny-contact ul{
+    @apply flex
+  }
 
   /* populer-excursions */
+ 
   .populer-excursions {
     @apply h-600 1366:h-800 xl:h-997 bg-crem xl:bg-blue relative border-transparent;
   }
@@ -119,6 +134,29 @@
     @apply rounded-sm overflow-hidden order-1 xl:order-2;
   }
 
+  /* cursomer-review */
+  .cursomer-review{
+    @apply h-auto container m-auto my-20;
+  }
+  .cursomer-review .reviews{
+    @apply bg-crem p-25 rounded-md;
+  }
+  .cursomer-review .review-date{
+    @apply text-12 text-Gray font-Prompt py-20;
+  }
+  .cursomer-review .star{
+    @apply flex gap-4;
+  }
+  .cursomer-review .review-read{
+    @apply text-Gray font-Prompt;
+  }
+  .cursomer-review .review-load{
+    @apply flex justify-center items-center py-20 my-20;
+  }
+  .cursomer-review .review-load-btn{
+    @apply text-blue py-15 px-25 bg-crem uppercase font-600 font-Prompt;
+  }
+
   /* map */
   .map {
     @apply container m-auto h-auto xl:h-530 bg-[url('../assets/image/map.png')] bg-no-repeat bg-center bg-cover p-30 flex flex-wrap justify-center xl:justify-between;
@@ -127,7 +165,7 @@
     @apply bg-blue text-center text-white h-auto xl:h-full w-full lg:w-[340px] order-2 xl:order-1 my-20 xl:my-auto;
   }
   .map-title {
-    @apply w-800 h-full sm:p-20 xl:p-32 order-1 xl:order-2;
+    @apply w-800 h-full p-50 sm:p-20 xl:p-32 order-1 xl:order-2 ;
   }
 
   /* find-gram */
@@ -145,12 +183,23 @@
     @apply bg-blue text-white p-30;
   }
   .footer .footer-menu {
-    @apply border p-5;
+    @apply xl:p-8;
   }
   .footer .footer-dropdown ul li {
     @apply text-16 font-Prompt mt-12;
   }
   .footer input {
-    @apply h-[42px] w-[300px] rounded-md my-2;
+    @apply h-[42px] w-full rounded-md my-2;
   }
+  .footer .copy-right{
+    @apply flex justify-center items-center font-Prompt py-20;
+  }
+}
+
+.swiper-pagination{
+  top: unset !important;
+  left: unset !important;
+  right: unset !important;
+  bottom: unset !important;
+  width: auto !important;
 }

@@ -1,100 +1,76 @@
-// import { defineConfig } from "eslint/config";
+import { defineConfig } from "eslint/config";
 
-// import globals from "globals";
+import globals from "globals";
 
-// import js from "@eslint/js";
+import js from "@eslint/js";
 
-// import html from "@html-eslint/eslint-plugin";
+import html from "@html-eslint/eslint-plugin";
 
 
-// export default defineConfig([
+export default defineConfig([
 
-// { files: ["**/*.{js,mjs,cjs}"] },
+{ files: ["**/*.{js,mjs,cjs}"] },
 
-// { files: ["**/*.js"], languageOptions: { sourceType: "script" } },
+{ files: ["**/*.js"], languageOptions: { sourceType: "script" } },
 
-// { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.browser } },
+{ files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.browser } },
 
-// {
+{
 
-// files: ["**/*.{js,mjs,cjs}"],
+files: ["**/*.{js,mjs,cjs}"],
 
-// plugins: { js },
+plugins: { js },
 
-// extends: ["js/recommended"],
+extends: ["js/recommended"],
 
-// rules: {
+rules: {
 
-// "no-console": "error",
+"no-console": "error",
+"no-debugger": "error",
+"no-alert": "error",
 
-// "no-debugger": "error",
+curly: "error",
 
-// "no-alert": "error",
+"no-use-before-define": ["error", { functions: false, classes: true }],
 
-// curly: "error",
+"no-shadow": "error",
+"prefer-const": "error",
+"no-var": "error",
+"prefer-template": "error",
+"no-loop-func": "error",
+"max-depth": ["error", 4],
+"no-duplicate-imports": "error",
+"no-implied-eval": "error",
+"no-self-compare": "error",
+"no-useless-return": "error",
+"no-unsafe-optional-chaining": "error",
+"array-callback-return": "error",
 
-// "no-use-before-define": ["error", { functions: false, classes: true }],
+},
+},
 
-// "no-shadow": "error",
+{
+files: ["**/*.html"],
 
-// "prefer-const": "error",
+plugins: { "@html-eslint": html },
 
-// "no-var": "error",
+extends: [html.configs["flat/recommended"]],
 
-// "prefer-template": "error",
+rules: {
 
-// "no-loop-func": "error",
+"@html-eslint/require-closing-tags": "error",
+"@html-eslint/no-duplicate-id": "error",
+"@html-eslint/require-button-type": "error",
+"@html-eslint/require-li-container": "error",
+"@html-eslint/no-multiple-h1": "error",
+"@html-eslint/require-title": "error",
+"@html-eslint/require-img-alt": "error",
+"@html-eslint/lowercase": "error",
+"@html-eslint/no-multiple-empty-lines": "error",
+"@html-eslint/no-trailing-spaces": "error",
 
-// "max-depth": ["error", 4],
+},
 
-// "no-duplicate-imports": "error",
+},
 
-// "no-implied-eval": "error",
-
-// "no-self-compare": "error",
-
-// "no-useless-return": "error",
-
-// "no-unsafe-optional-chaining": "error",
-
-// "array-callback-return": "error",
-
-// },
-
-// },
-
-// {
-
-// files: ["**/*.html"],
-
-// plugins: { "@html-eslint": html },
-
-// extends: [html.configs["flat/recommended"]],
-
-// rules: {
-
-// "@html-eslint/require-closing-tags": "error",
-
-// "@html-eslint/no-duplicate-id": "error",
-
-// "@html-eslint/require-button-type": "error",
-
-// "@html-eslint/require-li-container": "error",
-
-// "@html-eslint/no-multiple-h1": "error",
-
-// "@html-eslint/require-title": "error",
-
-// "@html-eslint/require-img-alt": "error",
-
-// "@html-eslint/lowercase": "error",
-
-// "@html-eslint/no-multiple-empty-lines": "error",
-
-// "@html-eslint/no-trailing-spaces": "error",
-
-// },
-
-// },
-
-// ]);
+]);

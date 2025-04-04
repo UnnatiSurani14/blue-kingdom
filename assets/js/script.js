@@ -1,3 +1,17 @@
+// toggle
+let toggle=document.getElementById("toggle");
+let nav=document.getElementById("navbar");
+
+toggle.addEventListener("click",function(){
+  if (nav.style.display === "none" || nav.style.display === "") {
+    nav.style.display = "block";
+    nav.style.backgroundColor="#142C58";
+  } else {
+    nav.style.display = "none";
+  }
+})
+
+// compny-contact
 const compnyContact = new Swiper(".compny-contact-swiper", {
   slidesPerView: 1,
   loop: true,
@@ -13,10 +27,12 @@ const compnyContact = new Swiper(".compny-contact-swiper", {
     1280: { slidesPerView: 5 },
   },
 });
+
+// populer-excursions
 const populerExcursions = new Swiper(".populer-excursions-swiper", {
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 40,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: false,
