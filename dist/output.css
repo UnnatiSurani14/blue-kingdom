@@ -1052,7 +1052,7 @@ video {
 
 .announcement {
   display: flex;
-  height: 69px;
+  height: 44px;
   align-items: center;
   justify-content: center;
   --tw-bg-opacity: 1;
@@ -1065,6 +1065,7 @@ video {
 
 @media (min-width: 1200px) {
   .announcement {
+    height: 69px;
     font-size: 32px;
   }
 }
