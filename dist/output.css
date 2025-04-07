@@ -1932,9 +1932,19 @@ video {
     padding-left: 9rem;
     padding-right: 9rem;
   }
+}
 
-  .md\:ps-70 {
-    padding-inline-start: 70px;
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -1969,6 +1979,10 @@ video {
 
   .xl\:gap-20 {
     gap: 20px;
+  }
+
+  .xl\:ps-70 {
+    padding-inline-start: 70px;
   }
 
   .xl\:text-left {
