@@ -30,7 +30,7 @@
     @apply text-white bg-blue rounded-md font-Prompt px-10 py-10 uppercase flex justify-center gap-10 hover:gap-12;
   }
   .header-title{
-    @apply font-FjallaOne text-white
+    @apply font-FjallaOne text-white;
   }
   .h1 {
     @apply text-64 xl:text-110 drop-shadow-md;
