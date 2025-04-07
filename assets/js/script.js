@@ -20,7 +20,7 @@ const compnyContact = new Swiper(".compny-contact-swiper", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    320: { slidesPerView: 1.3 },
+    320: { slidesPerView: 1.5 },
     425: { slidesPerView: 2 },
     660: { slidesPerView: 2.5 },
     1024: { slidesPerView: 4 },
@@ -39,10 +39,10 @@ const populerExcursions = new Swiper(".populer-excursions-swiper", {
     clickable: true,
   },
   breakpoints: {
-    320: { slidesPerView: 1.25 },
-    660: { slidesPerView: 2 },
-    1024: { slidesPerView: 2.5 },
-    1280: { slidesPerView: 4 },
+    320: { slidesPerView: 1.25,spaceBetween:20 },
+    660: { slidesPerView: 2 ,spaceBetween:30},
+    1024: { slidesPerView: 2.5,spaceBetween:30 },
+    1280: { slidesPerView: 4,spaceBetween:30 },
   },
 });
 
