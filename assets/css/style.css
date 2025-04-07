@@ -48,7 +48,7 @@
     @apply text-blue text-48 xl:text-64 text-center drop-shadow-xl font-FjallaOne uppercase;
   }
   .title-adventure {
-    @apply text-white text-48 xl:text-64 text-center drop-shadow-xl font-FjallaOne uppercase;
+    @apply text-white text-48 xl:text-64 text-center drop-shadow-xl font-FjallaOne uppercase p-4;
   }
   .title-footer {
     @apply text-white text-20 font-Prompt font-600 uppercase mb-2;

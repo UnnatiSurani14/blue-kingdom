@@ -794,6 +794,7 @@ video {
 }
 
 .title-adventure {
+  padding: 1rem;
   text-align: center;
   font-family: Fjalla One, sans-serif;
   font-size: 48px;
