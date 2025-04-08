@@ -1335,13 +1335,22 @@ video {
   right: 0px;
   border-bottom-left-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(73 188 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(20 44 88 / var(--tw-bg-opacity, 1));
   padding: 10px;
   font-family: Prompt, sans-serif;
   font-size: 14px;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(255 218 29 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1200px) {
+  .populer-excursions-swiper .banner {
+    --tw-bg-opacity: 1;
+    background-color: rgb(73 188 255 / var(--tw-bg-opacity, 1));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
 }
 
 .populer-excursions-swiper .swiper-slide .swiper-slide-content {

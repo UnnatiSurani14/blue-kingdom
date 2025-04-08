@@ -110,7 +110,7 @@
     @apply bg-white w-335 rounded-lg overflow-hidden relative shadow-xl;
   }
   .populer-excursions-swiper .banner {
-    @apply absolute top-0 right-0 text-14 text-white font-Prompt font-700 bg-lightBlue p-10 rounded-bl-lg;
+    @apply absolute top-0 right-0 text-14 text-yellow xl:text-white font-Prompt font-700 bg-blue xl:bg-lightBlue p-10 rounded-bl-lg;
   }
   .populer-excursions-swiper .swiper-slide .swiper-slide-content {
     @apply p-10 xl:p-20;
