@@ -21,7 +21,7 @@
 }
 @layer components {
   .btn-book {
-    @apply text-blue bg-yellow rounded-md py-10 border 375:px-4 px-25 font-600 font-Prompt uppercase hover:bg-lightYellow hover:shadow-sm hover:shadow-white;
+    @apply text-blue bg-yellow rounded-md py-10 border 375:px-4 px-30 font-600 font-Prompt uppercase hover:bg-lightYellow hover:shadow-sm hover:shadow-white;
   }
   .btn-more {
     @apply text-lightBlue border-2 border-lightBlue rounded-md py-10 375:px-1 1450:px-3 px-25 font-600 font-Prompt uppercase hover:bg-lightBlue hover:text-blue;

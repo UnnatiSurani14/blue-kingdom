@@ -642,8 +642,8 @@ video {
   background-color: rgb(255 218 29 / var(--tw-bg-opacity, 1));
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: Prompt, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -996,9 +996,9 @@ video {
   padding: 1rem;
 }
 
-.px-60 {
-  padding-left: 60px;
-  padding-right: 60px;
+.px-70 {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .py-30 {
@@ -1914,20 +1914,6 @@ video {
   width: auto !important;
 }
 
-@media (max-width: 1450px) {
-  .\31 450\:px-150 {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-
-@media (max-width: 2560px) {
-  .\32 560\:px-120 {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -1939,11 +1925,6 @@ video {
 
   .sm\:gap-10 {
     gap: 10px;
-  }
-
-  .sm\:px-90 {
-    padding-left: 90px;
-    padding-right: 90px;
   }
 }
 
@@ -1973,6 +1954,11 @@ video {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:px-90 {
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
@@ -2007,6 +1993,11 @@ video {
 
   .xl\:gap-20 {
     gap: 20px;
+  }
+
+  .xl\:px-110 {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .xl\:ps-70 {
