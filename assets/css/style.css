@@ -29,6 +29,9 @@
   .map-btn {
     @apply text-white bg-blue rounded-md font-Prompt px-10 py-10 uppercase flex justify-center gap-10 hover:gap-12;
   }
+  .content {
+    @apply text-16 font-Prompt text-black;
+  }
   .header-title{
     @apply font-FjallaOne text-white ;
   }
@@ -56,9 +59,7 @@
   .sub-title {
     @apply text-24 text-white font-Prompt;
   }
-  .content {
-    @apply text-16 font-Prompt text-black;
-  }
+ 
 }
 @layer utilities {
   .announcement {
@@ -119,7 +120,10 @@
     @apply text-16 font-Prompt text-black flex gap-8 mt-3;
   }
   .populer-excursions .swiper-pagination-bullet {
-    @apply w-[55px] h-[14px] border border-lightBlue bg-lightBlue rounded-sm;
+    @apply w-[55px] h-[14px] border-2 border-lightBlue bg-transparent rounded-sm;
+  }
+  .populer-excursions .swiper-pagination-bullet-active{
+    @apply bg-lightBlue
   }
 
   /* our-boats */

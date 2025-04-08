@@ -726,6 +726,13 @@ video {
   gap: 12px;
 }
 
+.content {
+  font-family: Prompt, sans-serif;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(48 49 51 / var(--tw-text-opacity, 1));
+}
+
 .header-title {
   font-family: Fjalla One, sans-serif;
   --tw-text-opacity: 1;
@@ -826,13 +833,6 @@ video {
   font-size: 24px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.content {
-  font-family: Prompt, sans-serif;
-  font-size: 16px;
-  --tw-text-opacity: 1;
-  color: rgb(48 49 51 / var(--tw-text-opacity, 1));
 }
 
 .absolute {
@@ -1377,9 +1377,13 @@ video {
   height: 14px;
   width: 55px;
   border-radius: 0.125rem;
-  border-width: 1px;
+  border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(73 188 255 / var(--tw-border-opacity, 1));
+  background-color: transparent;
+}
+
+.populer-excursions .swiper-pagination-bullet-active {
   --tw-bg-opacity: 1;
   background-color: rgb(73 188 255 / var(--tw-bg-opacity, 1));
 }
