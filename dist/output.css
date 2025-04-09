@@ -1135,6 +1135,18 @@ video {
   }
 }
 
+.big-header .header-top .logo {
+  height: 69.82px;
+  width: 148px;
+}
+
+@media (min-width: 1200px) {
+  .big-header .header-top .logo {
+    height: auto;
+    width: auto;
+  }
+}
+
 .big-header .header-top .navbar {
   order: 3;
   margin-top: 1rem;

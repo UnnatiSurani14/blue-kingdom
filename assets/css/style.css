@@ -68,22 +68,25 @@
 
   /* header */
   .big-header {
-    @apply bg-[url('../assets/image/Content.png')] md:bg-[url('../assets/image/Header.png')] bg-no-repeat bg-cover bg-bottom h-auto xl:h-800 ;
+    @apply bg-[url('../assets/image/Content.png')] md:bg-[url('../assets/image/Header.png')] bg-no-repeat bg-cover bg-bottom h-auto xl:h-800;
   }
   .big-header .header-top {
     @apply h-full xl:h-120 flex flex-wrap items-center justify-around xl:justify-evenly p-2;
+  }
+  .big-header .header-top .logo{
+    @apply w-[148px] h-[69.82px] xl:w-auto xl:h-auto
   }
   .big-header .header-top .navbar {
     @apply h-full w-full xl:w-7/12 text-white order-3 xl:order-2 hidden xl:block mt-4;
   }
   .big-header .header-top .navbar ul {
-    @apply h-full w-full xl:flex justify-center items-center gap-28 uppercase font-Prompt font-600 text-center ;
+    @apply h-full w-full xl:flex justify-center items-center gap-28 uppercase font-Prompt font-600 text-center;
   }
   .big-header .header-top .navbar ul li{
-    @apply my-4 xl:mt-0
+    @apply my-4 xl:mt-0;
   }
   .big-header .header-top .navbar ul li a{
-    @apply hover:text-yellow
+    @apply hover:text-yellow;
   }
   .big-header .header-top .header-book-btn {
     @apply hidden xl:block;
@@ -100,7 +103,7 @@
     @apply flex flex-col items-center;
   }
   .compny-contact ul{
-    @apply flex
+    @apply flex;
   }
 
   /* populer-excursions */
@@ -123,7 +126,7 @@
     @apply w-[55px] h-[14px] border-2 border-lightBlue bg-transparent rounded-sm;
   }
   .populer-excursions .swiper-pagination-bullet-active{
-    @apply bg-lightBlue
+    @apply bg-lightBlue;
   }
 
   /* our-boats */
@@ -145,7 +148,7 @@
     @apply h-auto xl:h-195 container my-20 bg-crem;
   }
   .tab-slid{
-    @apply w-full h-full p-4 rounded-lg ;
+    @apply w-full h-full p-4 rounded-lg;
   }
   .tab-slid .tan-slid-item{
     @apply w-full border-b border-blue flex gap-28 overflow-auto;
@@ -190,15 +193,15 @@
     @apply bg-blue text-center text-white h-auto xl:h-full w-full lg:w-[340px] order-2 xl:order-1 my-20 xl:my-auto rounded-md;
   }
   .map-title {
-    @apply w-800 h-full p-50 sm:p-20 xl:p-32 order-1 xl:order-2 ;
+    @apply w-800 h-full p-50 sm:p-20 xl:p-32 order-1 xl:order-2;
   }
 
   /* find-gram */
   .find-gram .btn {
-    @apply h-[46px] w-[148px] bg-blue text-white text-center text-16 font-Prompt rounded-md ;
+    @apply h-[46px] w-[148px] bg-blue text-white text-center text-16 font-Prompt rounded-md;
   }
   .find-gram .btn:hover{
-    @apply bg-white text-blue shadow-md shadow-blue transition delay-300
+    @apply bg-white text-blue shadow-md shadow-blue transition delay-300;
   }
   .find-gram .gram-img:hover{
     @apply scale-105 transition duration-700;
