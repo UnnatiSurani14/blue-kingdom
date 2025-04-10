@@ -20,6 +20,9 @@
   }
 }
 @layer components {
+  .swiper-pagination{
+    @apply relative top-0 bottom-0 left-0 right-0 !important
+  }
   .btn-book {
     @apply text-blue bg-yellow rounded-md py-10 border 375:px-4 px-30 font-600 font-Prompt uppercase hover:bg-lightYellow hover:shadow-sm hover:shadow-white;
   }
@@ -198,7 +201,7 @@
 
   /* find-gram */
   .find-gram .btn {
-    @apply h-[46px] w-[148px] bg-blue text-white text-center text-16 font-Prompt rounded-md;
+    @apply px-28 py-11 bg-blue text-white text-center text-16 font-Prompt rounded-md;
   }
   .find-gram .btn:hover{
     @apply bg-white text-blue shadow-md shadow-blue transition delay-300;
@@ -228,12 +231,4 @@
   .footer .copy-right{
     @apply flex justify-center items-center font-Prompt py-20;
   }
-}
-
-.swiper-pagination{
-  top: unset !important;
-  left: unset !important;
-  right: unset !important;
-  bottom: unset !important;
-  width: auto !important;
 }
