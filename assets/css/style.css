@@ -203,6 +203,9 @@
   .find-gram .btn {
     @apply px-28 py-11 bg-blue text-white text-center text-16 font-Prompt rounded-md;
   }
+  .find-gram .gram-item{
+    @apply flex justify-center
+  }
   .find-gram .btn:hover{
     @apply bg-white text-blue shadow-md shadow-blue transition delay-300;
   }

@@ -96,8 +96,8 @@ module.exports = {
         20: "20px",
         28: "28px",
         40: "40px",
-        60: "60px",
         55: "55px",
+        60: "60px",
       },
       screens: {
         lg: { min: "1024px" },

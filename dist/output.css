@@ -1857,6 +1857,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.find-gram .gram-item {
+  display: flex;
+  justify-content: center;
+}
+
 .find-gram .btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -2022,13 +2027,13 @@ video {
     gap: 20px;
   }
 
+  .xl\:gap-40 {
+    gap: 40px;
+  }
+
   .xl\:px-110 {
     padding-left: 110px;
     padding-right: 110px;
-  }
-
-  .xl\:ps-70 {
-    padding-inline-start: 70px;
   }
 
   .xl\:text-left {
